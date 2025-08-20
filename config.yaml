@@ -1,0 +1,9 @@
+default_provider: claude
+mcp_servers:
+    - memory
+    - sequential-thinking
+    - context7
+    - openrouterai
+    - apollo-io
+workflows:
+    - test-and-fix

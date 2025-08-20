@@ -1,0 +1,51 @@
+{
+  "content": "---\nname: code-review\ndescription: Comprehensive code review with customizable focus areas\ncategory: development\ntags: \n  - review\n  - quality\n  - best-practices\nversion: 1.0.0\nvariables:\n  - name: file_path\n    description: Path to the file to review\n    required: true\n  - name: language\n    description: Programming language\n    required: false\n    default: \"auto-detect\"\n  - name: focus_areas\n    description: Specific areas to focus on\n    required: false\n    default: \"all\"\n---\n\n# Code Review Request\n\nPlease perform a comprehensive code review of the following file:\n\n**File**: `{{file_path}}`  \n**Language**: {{language}}\n\n## Review Scope\n\n{{#if focus_areas}}\nFocus particularly on: {{focus_areas}}\n{{else}}\nPlease review all aspects of the code.\n{{/if}}\n\n## Review Checklist\n\n1. **Code Quality**\n   - Is the code readable and well-organized?\n   - Are variable and function names descriptive?\n   - Is the code DRY (Don't Repeat Yourself)?\n\n2. **Best Practices**\n   - Does it follow {{language}} conventions?\n   - Are there any anti-patterns?\n   - Is error handling appropriate?\n\n3. **Performance**\n   - Are there any obvious performance issues?\n   - Could any algorithms be optimized?\n   - Are there unnecessary computations?\n\n4. **Security**\n   - Are there any security vulnerabilities?\n   - Is input validation adequate?\n   - Are secrets handled properly?\n\n5. **Testing**\n   - Is the code testable?\n   - What test cases would you recommend?\n   - Are edge cases handled?\n\n## Output Format\n\nPlease provide:\n1. An overall assessment (1-10 rating)\n2. Specific issues found (categorized by severity)\n3. Suggested improvements with code examples\n4. Positive aspects worth preserving\n\nBe constructive and educational in your feedback.",
+  "metadata": {
+    "id": "code-review",
+    "name": "code-review",
+    "description": "Prompt added from code-review.md",
+    "type": "template",
+    "tags": null,
+    "category": "user",
+    "version": "1.0.0",
+    "author": "",
+    "created_at": "2025-07-14T13:08:53.724648-05:00",
+    "updated_at": "2025-07-14T13:08:53.724648-05:00",
+    "variables": [
+      {
+        "name": "file_path",
+        "description": "Variable file_path",
+        "type": "string",
+        "required": false,
+        "default_value": null,
+        "validation": ""
+      },
+      {
+        "name": "language",
+        "description": "Variable language",
+        "type": "string",
+        "required": false,
+        "default_value": null,
+        "validation": ""
+      },
+      {
+        "name": "focus_areas",
+        "description": "Variable focus_areas",
+        "type": "string",
+        "required": false,
+        "default_value": null,
+        "validation": ""
+      },
+      {
+        "name": "else",
+        "description": "Variable else",
+        "type": "string",
+        "required": false,
+        "default_value": null,
+        "validation": ""
+      }
+    ],
+    "includes": null,
+    "extra": null
+  }
+}

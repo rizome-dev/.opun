@@ -1,0 +1,56 @@
+{
+  "code-review": {
+    "ID": "code-review",
+    "Name": "code-review",
+    "Category": "user",
+    "Tags": null,
+    "FilePath": "/Users/sjt/.opun/promptgarden/code-review.json"
+  },
+  "hello": {
+    "ID": "hello",
+    "Name": "hello",
+    "Category": "user",
+    "Tags": null,
+    "FilePath": "/Users/sjt/.opun/promptgarden/hello.json"
+  },
+  "prompt-1752135548333829000": {
+    "ID": "prompt-1752135548333829000",
+    "Name": "planning-template",
+    "Category": "templates",
+    "Tags": [
+      "planning",
+      "template",
+      "refactor"
+    ],
+    "FilePath": "/Users/sjt/.opun/promptgarden/prompt-1752135548333829000.json"
+  },
+  "prompt-1752135548334081000": {
+    "ID": "prompt-1752135548334081000",
+    "Name": "review-template",
+    "Category": "templates",
+    "Tags": [
+      "review",
+      "template",
+      "quality"
+    ],
+    "FilePath": "/Users/sjt/.opun/promptgarden/prompt-1752135548334081000.json"
+  },
+  "prompt-1752135548334218000": {
+    "ID": "prompt-1752135548334218000",
+    "Name": "questions-template",
+    "Category": "templates",
+    "Tags": [
+      "questions",
+      "template",
+      "discovery"
+    ],
+    "FilePath": "/Users/sjt/.opun/promptgarden/prompt-1752135548334218000.json"
+  },
+  "simple-refactor": {
+    "ID": "simple-refactor",
+    "Name": "simple-refactor",
+    "Category": "user",
+    "Tags": null,
+    "FilePath": "/Users/sjt/.opun/promptgarden/simple-refactor.json"
+  }
+}

@@ -1,0 +1,90 @@
+version: "1.0"
+mcp_servers:
+    - name: opun
+      package: opun
+      command: opun
+      args:
+        - mcp
+        - stdio
+      required: true
+      installed: true
+      install_path: builtin
+    - name: memory
+      package: '@modelcontextprotocol/server-memory'
+      command: npx
+      args:
+        - '@modelcontextprotocol/server-memory'
+      required: true
+      installed: true
+      version: 2025.4.25
+    - name: sequential-thinking
+      package: '@modelcontextprotocol/server-sequential-thinking'
+      command: npx
+      args:
+        - '@modelcontextprotocol/server-sequential-thinking'
+      required: true
+      installed: true
+      version: 2025.7.1
+    - name: filesystem
+      package: '@modelcontextprotocol/server-filesystem'
+      command: npx
+      args:
+        - '@modelcontextprotocol/server-filesystem'
+        - ~/Documents
+      required: false
+      installed: false
+    - name: context7
+      package: '@upstash/context7-mcp'
+      command: npx
+      args:
+        - '@upstash/context7-mcp'
+      required: false
+      installed: true
+      version: v1.0.14
+    - name: apollo-io
+      package: apollo-io-mcp-server
+      command: /Users/sjt/.opun/mcp/apollo-io-mcp-server/start.sh
+      args: []
+      required: false
+      installed: true
+      version: 0.1.0
+slash_commands:
+    - name: refactor
+      description: Run code refactoring workflow
+      type: workflow
+      handler: refactor-code
+      aliases:
+        - ref
+    - name: analyze
+      description: Analyze codebase structure
+      type: prompt
+      handler: promptgarden://analyze-code
+    - name: mcp
+      description: Manage MCP servers
+      type: builtin
+      handler: mcp_manager
+    - name: planning-template
+      description: Built-in planning-template
+      type: prompt
+      handler: promptgarden://planning-template
+    - name: review-template
+      description: Built-in review-template
+      type: prompt
+      handler: promptgarden://review-template
+    - name: questions-template
+      description: Built-in questions-template
+      type: prompt
+      handler: promptgarden://questions-template
+    - name: code-review
+      description: Prompt added from code-review.md
+      type: prompt
+      handler: promptgarden://code-review
+    - name: simple-refactor
+      description: A simple refactor prompt, to act as a PM/Programmer
+      type: prompt
+      handler: promptgarden://simple-refactor
+    - name: hello
+      description: world
+      type: prompt
+      handler: promptgarden://hello
+last_updated: 2025-08-20T08:49:35.761413-05:00

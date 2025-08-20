@@ -1,0 +1,35 @@
+description: Perform basic arithmetic calculations
+implementation:
+    code: "function calculate(input) {\n  const { operation, a, b } = input;\n  let result;\n  let symbol;\n  \n  switch (operation) {\n    case 'add':\n      result = a + b;\n      symbol = '+';\n      break;\n    case 'subtract':\n      result = a - b;\n      symbol = '-';\n      break;\n    case 'multiply':\n      result = a * b;\n      symbol = '*';\n      break;\n    case 'divide':\n      if (b === 0) {\n        throw new Error('Division by zero');\n      }\n      result = a / b;\n      symbol = '/';\n      break;\n    default:\n      throw new Error('Invalid operation');\n  }\n  \n  return {\n    result,\n    expression: `${a} ${symbol} ${b} = ${result}`\n  };\n}"
+    type: javascript
+input_schema:
+    properties:
+        a:
+            description: First operand
+            type: number
+        b:
+            description: Second operand
+            type: number
+        operation:
+            description: The arithmetic operation to perform
+            enum:
+                - add
+                - subtract
+                - multiply
+                - divide
+            type: string
+    required:
+        - operation
+        - a
+        - b
+    type: object
+name: calculator
+output_schema:
+    properties:
+        expression:
+            description: The expression that was evaluated
+            type: string
+        result:
+            description: The result of the calculation
+            type: number
+    type: object

@@ -1,0 +1,18 @@
+{
+  "content": "ultrathink\n\nuse sequentialthinking\nuse memory\n\nFirst, granularly examine every line of this library to understand the full picture, scope and purpose of the implementations, granularly understanding interactions \u0026 higher-level functionality.\n\nThen, act as a master Project Manager / Olympiad Programmer duo team to implement everything fully and completely.\n\nAfter each implementation, you should ensure all tests are up to date and include all of the previous and new implementations such that we have full coverage.\n\nIf you ever find yourself in a loop doing the same actions over and over again but not making progress, reset with some randomness and continue with the task. \n\nThis should involve multiple iterations of thinking, acting, testing \u0026 researching.\n\nYou cannot mock anything, you must implement everything fully and completely.\n",
+  "metadata": {
+    "id": "simple-refactor",
+    "name": "simple-refactor",
+    "description": "A simple refactor prompt, to act as a PM/Programmer",
+    "type": "template",
+    "tags": null,
+    "category": "user",
+    "version": "1.0.0",
+    "author": "",
+    "created_at": "2025-07-15T17:44:44.383023-05:00",
+    "updated_at": "2025-07-15T17:44:44.383023-05:00",
+    "variables": [],
+    "includes": null,
+    "extra": null
+  }
+}
