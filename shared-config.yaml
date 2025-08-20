@@ -87,4 +87,4 @@ slash_commands:
       description: world
       type: prompt
       handler: promptgarden://hello
-last_updated: 2025-08-20T08:49:35.761413-05:00
+last_updated: 2025-08-20T10:04:57.799545-05:00
