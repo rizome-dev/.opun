@@ -58,7 +58,5 @@ This is a managed Opun session with the following MCP servers available:
 
 - **sequential-thinking**: @modelcontextprotocol/server-sequential-thinking
 
-- **context7**: @upstash/context7-mcp
-
 - **apollo-io**: apollo-io-mcp-server
 

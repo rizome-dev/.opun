@@ -33,14 +33,6 @@ mcp_servers:
         - ~/Documents
       required: false
       installed: false
-    - name: context7
-      package: '@upstash/context7-mcp'
-      command: npx
-      args:
-        - '@upstash/context7-mcp'
-      required: false
-      installed: true
-      version: v1.0.14
     - name: apollo-io
       package: apollo-io-mcp-server
       command: /Users/sjt/.opun/mcp/apollo-io-mcp-server/start.sh
@@ -87,4 +79,4 @@ slash_commands:
       description: world
       type: prompt
       handler: promptgarden://hello
-last_updated: 2025-08-20T10:04:57.799545-05:00
+last_updated: 2025-09-04T22:29:10.391966-05:00

@@ -4,6 +4,5 @@ mcp_servers:
     - sequential-thinking
     - context7
     - openrouterai
-    - apollo-io
 workflows:
     - test-and-fix
